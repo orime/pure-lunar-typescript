@@ -1,0 +1,51 @@
+{
+  "name": "pure-lunar-typescript",
+  "version": "1.0.0",
+  "description": "pure-lunar-typescript is a calendar library for Solar and Chinese Lunar.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orime/pure-lunar-typescript.git"
+  },
+  "keywords": [
+    "calendar",
+    "lunar",
+    "solar"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orime/pure-lunar-typescript/issues"
+  },
+  "homepage": "https://github.com/orime/pure-lunar-typescript",
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/plugin-transform-arrow-functions": "^7.23.3",
+    "@babel/plugin-transform-block-scoping": "^7.23.4",
+    "@babel/plugin-transform-classes": "^7.23.5",
+    "@babel/plugin-transform-template-literals": "^7.23.3",
+    "@babel/preset-env": "^7.23.8",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/node": "^20.11.5",
+    "core-js": "^3.35.0",
+    "rollup": "^4.9.5",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "unbuild": "^1.1.2"
+  }
+}
